@@ -19,10 +19,9 @@
 
 h1, h2, h3 {
     font-family: 'Bitter', serif;
-    
 }
 
-.jumbotron h1 {color:white;}
+.home-callout h1,.home-callout h2, .home-callout h3 {color:white;}
 
 body {
   padding-top: 5rem;
@@ -32,13 +31,18 @@ body {
   text-align: center;
 }
 
-.jumbotron, .navbar{
+.home-callout, .navbar {
   background: #cc2b5e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.home-callout {
+  padding-top:50px;
+  padding-bottom:50px;
+  text-color:white;
+}
 
 .navbar {
   border:none;
 }
-.navbar a {color:white;}
