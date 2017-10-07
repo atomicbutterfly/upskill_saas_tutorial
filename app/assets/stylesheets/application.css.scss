@@ -38,11 +38,16 @@ body {
 }
 
 .home-callout {
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:150px;
+  padding-bottom:150px;
   text-color:white;
 }
+
 
 .navbar {
   border:none;
 }
+
+.navbar-default .navbar-d,.navbar-default .navbar-nav > li > a {color:white;}
+ .navbar-default .navbar-nav > li > a:hover {color:white; opacity:0.75;}
+ .navbar-default .navbar-nav > li > a:visited {color:white;opacity:0.75;}
