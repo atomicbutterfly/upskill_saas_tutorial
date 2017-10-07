@@ -14,7 +14,18 @@
  *= require_self
  */
 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
 h1, h2, h3 {
     font-family: 'Bitter', serif;
     
+}
+
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
