@@ -17,11 +17,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// google fonts for titles
 h1, h2, h3 {
     font-family: 'Bitter', serif;
 }
-
-.home-callout h1,.home-callout h2, .home-callout h3 {color:white;}
 
 body {
   padding-top: 5rem;
@@ -31,23 +30,33 @@ body {
   text-align: center;
 }
 
+// 'transparent' navigation bg
 .home-callout, .navbar {
   background: #cc2b5e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+//padding for header content that "fat spacious" look
 .home-callout {
   padding-top:150px;
   padding-bottom:150px;
-  text-color:white;
+  color:white;
 }
 
-
-.navbar {
+//remove border from default bootstrap navigation
+.navbar, .navbar-toggle.collapsed, .navbar-default .navbar-collapse, .navbar-default .navbar-form  {
   border:none;
 }
 
-.navbar-default .navbar-d,.navbar-default .navbar-nav > li > a {color:white;}
- .navbar-default .navbar-nav > li > a:hover {color:white; opacity:0.75;}
- .navbar-default .navbar-nav > li > a:visited {color:white;opacity:0.75;}
+//links are white
+.navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a,
+ {
+   color:white;
+   &:hover {
+     color: white;
+     opacity: 0.75;
+   } 
+
+ }
+
