@@ -50,9 +50,16 @@ body {
 }
 
 //remove border from default bootstrap navigation
-.navbar, .navbar-toggle.collapsed, .navbar-default .navbar-collapse, .navbar-default .navbar-form  {
-  border:none;
+.navbar-default .navbar-toggle .icon-bar  {
+  background-color:white;
 }
+
+.navbar-default .navbar-toggle{
+    border: 2px solid white;
+    &:hover, &:focus
+    {background-color:#6e4083;}
+}
+
 
 //links are white
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a,
