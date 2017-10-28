@@ -26,8 +26,9 @@
           <%end%>
           </div>
           <div class="nav navbar-nav navbar-right">
-            <a href="#" class="btn btn-default navbar-btn">Login</a>
-            <a href="#" class="btn btn-default navbar-btn">sign up</a>
+            <%= link_to "Log in" , new_user_session_path , class: "btn btn-default navbar-btn" %>
+            <%= link_to "Sign Up" , new_user_registration_path , class: "btn btn-default navbar-btn" %>
+           
           </div>
           
           <ul class="nav navbar-nav navbar-right">
