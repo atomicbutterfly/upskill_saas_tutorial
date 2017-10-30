@@ -44,9 +44,13 @@ body {
 
 //padding for header content that "fat spacious" look
 .home-callout {
-  padding-top:150px;
+  padding-top:150px;    
   padding-bottom:150px;
   color:white;
+}
+
+.alert-notice {
+    display: none;
 }
 
 //remove border from default bootstrap navigation
