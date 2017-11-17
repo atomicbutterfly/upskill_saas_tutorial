@@ -6,6 +6,7 @@ $(document).on('turbolinks:load', function(){
     // set stripe public key
     Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
     
+    
     // when user clicks form submit button 
     submitBtn.click(function(event){
         
@@ -15,16 +16,16 @@ $(document).on('turbolinks:load', function(){
     // collect credit card fields
         var ccNum = $('#card_number').val(),
             cvcNum =$('#card_code').val(),
-            ExpMonth = $('#card_month').val(),
-            ExpYear = $('#card_year').val();
+            expMonth = $('#card_month').val(),
+            expYear = $('#card_year').val();
         //send card information to stripe
-        Stripe.createToken({
+         Stripe.createToken({
             number : ccNum,
             cvc: cvcNum,
             exp_month: expMonth,
-            exp_year: exp_year
-        }, StripeResponceHandler);
-    };)
+            exp_year: expYear
+        }, stripeResponseHandler);
+    });
         
 
 
